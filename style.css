@@ -1,0 +1,280 @@
+                                                    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+                                                    * {
+                                                        padding: 0;
+                                                        margin: 0;
+                                                        user-select: none;
+                                                    }
+                                                    
+                                                    body {
+                                                        background: #f2f2f2;
+                                                        min-height: 100vh;
+                                                    }
+                                                    
+                                                    .container::before {
+                                                        content: "";
+                                                        background: url(bg-top-desktop.svg);
+                                                        width: 320px;
+                                                        height: 320px;
+                                                        background-size: contain;
+                                                        background-repeat: no-repeat;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        mix-blend-mode: darken;
+                                                        pointer-events: none;
+                                                    }
+                                                    
+                                                    main {
+                                                        position: relative;
+                                                        width: 100%;
+                                                        min-height: 100vh;
+                                                    }
+                                                    
+                                                    .container::after {
+                                                        content: "";
+                                                        background: url(bg-bottom-desktop.svg);
+                                                        width: 320px;
+                                                        height: 320px;
+                                                        background-size: contain;
+                                                        background-repeat: no-repeat;
+                                                        position: absolute;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                        mix-blend-mode: darken;
+                                                        pointer-events: none;
+                                                    }
+                                                    
+                                                    .container {
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        flex-wrap: wrap;
+                                                        justify-content: space-around;
+                                                        align-items: center;
+                                                        position: absolute;
+                                                        top: 50%;
+                                                        left: 50%;
+                                                        transform: translate(-50%, -50%);
+                                                        box-sizing: border-box;
+                                                        border-radius: 8px;
+                                                        overflow: hidden;
+                                                        width: 85%;
+                                                        min-height: 650px;
+                                                        font-family: 'League Spartan', sans-serif;
+                                                        padding: 40px;
+                                                        background: #fff;
+                                                        -webkit-box-shadow: 1px 8px 18px 0px #00000098;
+                                                        box-shadow: 1px 8px 18px 0px #000000ae;
+                                                    }
+                                                    
+                                                    .intro {
+                                                        width: 35%;
+                                                        box-sizing: border-box;
+                                                        align-self: left;
+                                                        justify-content: center;
+                                                    }
+                                                    
+                                                    .intro h1 {
+                                                        color: #502050;
+                                                        font-weight: 700;
+                                                        font-size: 3rem;
+                                                    }
+                                                    
+                                                    .intro p {
+                                                        color: grey;
+                                                        font-weight: 400;
+                                                        font-size: 1.2rem;
+                                                        padding: 20px 0;
+                                                        line-height: 1.5rem;
+                                                    }
+                                                    
+                                                    .rating-box {
+                                                        width: 430px;
+                                                        padding: 10px;
+                                                        box-sizing: border-box;
+                                                        display: flex;
+                                                        justify-content: space-around;
+                                                        align-items: center;
+                                                        margin: 10px 0;
+                                                        background-color: #ffe5ff;
+                                                    }
+                                                    
+                                                    .rating-box h2 {
+                                                        color: #502050;
+                                                        font-weight: 700;
+                                                        border-radius: 12px;
+                                                        font-size: 1rem;
+                                                    }
+                                                    
+                                                    .rating {
+                                                        width: 50%;
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        box-sizing: border-box;
+                                                    }
+                                                    
+                                                    .rating-box:nth-child(1) {
+                                                        align-self: flex-start;
+                                                    }
+                                                    
+                                                    .rating-box:nth-child(2) {
+                                                        align-self: center;
+                                                    }
+                                                    
+                                                    .rating-box:nth-child(3) {
+                                                        align-self: flex-end;
+                                                    }
+                                                    
+                                                    .testimonials {
+                                                        margin: 30px auto 0;
+                                                        width: 100%;
+                                                        min-height: 260px;
+                                                        display: flex;
+                                                        justify-content: space-around;
+                                                        box-sizing: border-box;
+                                                    }
+                                                    
+                                                    .testimonials-box {
+                                                        width: 330px;
+                                                        height: 200px;
+                                                        background: #502050;
+                                                        border-radius: 8px;
+                                                        box-sizing: border-box;
+                                                        padding: 20px;
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        justify-content: space-around;
+                                                    }
+                                                    
+                                                    .testimonials-box:nth-child(1) {
+                                                        align-self: flex-start;
+                                                    }
+                                                    
+                                                    .testimonials-box:nth-child(2) {
+                                                        align-self: center;
+                                                    }
+                                                    
+                                                    .testimonials-box:nth-child(3) {
+                                                        align-self: flex-end;
+                                                    }
+                                                    
+                                                    .profile {
+                                                        display: flex;
+                                                        align-items: center;
+                                                    }
+                                                    
+                                                    .profile img {
+                                                        width: 50px;
+                                                        height: 50px;
+                                                        border-radius: 50%;
+                                                    }
+                                                    
+                                                    .profile-data {
+                                                        padding: 0 15px;
+                                                    }
+                                                    
+                                                    .profile-data h2 {
+                                                        font-size: 1.1rem;
+                                                        color: #f2f2f2;
+                                                        margin-bottom: 5px;
+                                                        font-weight: 500;
+                                                    }
+                                                    
+                                                    .profile-data p {
+                                                        font-size: 1rem;
+                                                        color: #ee68a4;
+                                                        font-weight: 400;
+                                                    }
+                                                    
+                                                    .review p {
+                                                        color: #ffe5ff;
+                                                        line-height: 1.2rem;
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 1100px) {
+                                                        .container::before {
+                                                            background: url(bg-top-mobile.svg);
+                                                            width: 250px;
+                                                            height: 250px;
+                                                        }
+                                                        .container::after {
+                                                            background: url(bg-bottom-mobile.svg);
+                                                            width: 250px;
+                                                            height: 250px;
+                                                        }
+                                                        .container {
+                                                            display: block;
+                                                        }
+                                                        .intro {
+                                                            width: 100%;
+                                                        }
+                                                        .rating-box {
+                                                            width: 100%;
+                                                        }
+                                                        .rating {
+                                                            width: 100%;
+                                                        }
+                                                        .testimonials {
+                                                            width: 100%;
+                                                            display: block;
+                                                        }
+                                                        .testimonials-box {
+                                                            width: 100%;
+                                                            margin: 15px auto;
+                                                        }
+                                                        .profile-data {
+                                                            padding: 0 15px;
+                                                        }
+                                                        main {
+                                                            margin: 300px auto;
+                                                        }
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 430px) {
+                                                        .intro {
+                                                            width: 100%;
+                                                        }
+                                                        .rating-box {
+                                                            width: 100%;
+                                                        }
+                                                        .rating {
+                                                            width: 100%;
+                                                        }
+                                                        .intro h1 {
+                                                            font-size: 2.5rem;
+                                                        }
+                                                        .intro p {
+                                                            font-size: 1rem;
+                                                        }
+                                                        .rating-box h2 {
+                                                            font-size: 0.65rem;
+                                                        }
+                                                        .testimonials {
+                                                            width: 100%;
+                                                            display: block;
+                                                        }
+                                                        .testimonials-box {
+                                                            width: 100%;
+                                                            margin: 15px auto;
+                                                        }
+                                                        .profile-data {
+                                                            padding: 0 15px;
+                                                        }
+                                                        main {
+                                                            margin: 250px auto;
+                                                        }
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 380px) {
+                                                        .container {
+                                                            padding: 25px;
+                                                        }
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 380px) {
+                                                        .container {
+                                                            padding: 20px;
+                                                        }
+                                                        main {
+                                                            margin: 300px auto;
+                                                        }
+                                                    }
